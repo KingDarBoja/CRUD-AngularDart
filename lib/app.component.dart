@@ -1,5 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
+import 'package:angular_forms/angular_forms.dart';
 
 @Component(
     selector: 'app-root',
@@ -9,13 +10,14 @@ import 'package:angular_components/angular_components.dart';
       './app.component.css'
     ],
     directives: [
+      formDirectives,
       MaterialButtonComponent,
       MaterialIconComponent,
     ],
     providers: [
       materialProviders
     ])
-	
+
 class AppComponent {
   var title = 'AngularDart';
 }
